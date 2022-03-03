@@ -1,0 +1,22 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "Learning node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nancy-luu/node.js-course-work-section-1-to-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nancy-luu/node.js-course-work-section-1-to-5/issues"
+  },
+  "homepage": "https://github.com/nancy-luu/node.js-course-work-section-1-to-5#readme",
+  "dependencies": {
+    "validator": "^10.8.0"
+  }
+}
