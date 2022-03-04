@@ -8,11 +8,14 @@
 // const sum = add(4, -2)
 // console.log(sum)
 
+const chalk = require('chalk')
 const validator = require('validator')
 const getNotes = require('./notes.js')
 
 const printNote = getNotes()
-console.log(printNote)
+console.log(printNote);
 
-console.log(validator.isEmail('example.com'))
-console.log(validator.isURL('https://mead.io'))
+console.log(validator.isEmail('example.com'));
+console.log(validator.isURL('https://mead.io'));
+
+console.log(chalk.bold.green.inverse('Succcess!'));
