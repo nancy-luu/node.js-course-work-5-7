@@ -19,3 +19,4 @@ console.log(validator.isEmail('example.com'));
 console.log(validator.isURL('https://mead.io'));
 
 console.log(chalk.bold.green.inverse('Succcess!'));
+console.log(chalk.bold.red.inverse('Error!'));
