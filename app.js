@@ -10,19 +10,20 @@ if (!location) {
 } else {
     // first asynchronous operation
     // the response object for data has lat, lon, and location
-    geocode(location, (error, data) => {
+    geocode(location, (error, {longitude, latitude, location} = {}) => {
+        // const {longitude, latitude, location} = data
         if (error) {
             return console.log(error)
         }
     
         // second asynchronous operation that has access to final data
         // utilize the response back from geocode for lat and lon
-        forecast(data.longitude, data.latitude, (error, forecastData) => {
+        forecast(longitude, latitude, (error, forecastData) => {
             if (error) {
                 return console.log(error)
             }
     
-            console.log(data.location)
+            console.log(location)
             console.log(forecastData)
         })
     })
